@@ -29,7 +29,45 @@ To create an **abstract class** named `Shape` with an **abstract method** `calcu
 ---
 
 ## 💻 Program
+```
+from abc import ABC, abstractmethod
+import math
+
+# Abstract class
+class Shape(ABC):
+    @abstractmethod
+    def calculate_area(self):
+        pass
+
+# Subclass: Rectangle
+class Rectangle(Shape):
+    def __init__(self, length=5, breadth=3):
+        self.length = length
+        self.breadth = breadth
+
+    def calculate_area(self):
+        return self.length * self.breadth
+
+# Subclass: Circle
+class Circle(Shape):
+    def __init__(self, radius=4):
+        self.radius = radius
+
+    def calculate_area(self):
+        return math.pi * self.radius * self.radius
+
+# Create objects and display results
+rect = Rectangle()
+circle = Circle()
+
+print("Area of Rectangle:", rect.calculate_area())
+print("Area of Circle:", round(circle.calculate_area(), 2))
+```
 
 ## Output
+<img width="377" height="80" alt="image" src="https://github.com/user-attachments/assets/cc20c4fa-4329-4309-a3be-d1966e9e5367" />
 
 ## Result
+The program successfully demonstrates abstraction and inheritance using Python’s abc module.
+An abstract class Shape defines the blueprint for calculating area, and the subclasses Rectangle and Circle implement the specific area calculations.
+The calculated areas are displayed correctly for both shapes.
