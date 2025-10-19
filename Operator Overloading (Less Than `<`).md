@@ -25,25 +25,21 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
+```
 # Operator Overloading Example: Less Than (<)
-
 class A:
-    def __init__(self, a):
-        self.a = a
+    def _init_(self, value):
+        self.value = value
+    def _lt_(self, other):
+        return self.value < other.value
 
-    # Overloading the < operator
-    def __lt__(self, o):
-        if self.a < o.a:
-            return "ob1 is less than ob2"
-        else:
-            return "ob2 is less than ob1"
-
-# Create two objects
-ob1 = A(10)
-ob2 = A(20)
-
-# Compare using < operator
-print(ob1 < ob2)
+ob1 = A(200)
+ob2 = A(30)
+if ob1 < ob2:
+    print("ob1 is less than ob2")
+else:
+    print("ob2 is less than ob1")
+```
 
 
 ## Output
