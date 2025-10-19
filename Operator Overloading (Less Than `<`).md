@@ -26,7 +26,6 @@ To write a Python program that demonstrates **operator overloading** by overload
 
 ## 💻 Program
 ```
-# Operator Overloading Example: Less Than (<)
 class A:
     def _init_(self, value):
         self.value = value
@@ -43,7 +42,7 @@ else:
 
 
 ## Output
-<img width="277" height="90" alt="image" src="https://github.com/user-attachments/assets/177551bc-d580-48d7-972e-b612a4b99d88" />
+![WhatsApp Image 2025-10-19 at 20 26 10_8fd2d08a](https://github.com/user-attachments/assets/4b36bf4b-a461-4627-a987-aba3e3be4e64)
 
 
 ## Result
